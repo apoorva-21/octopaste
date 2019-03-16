@@ -72,17 +72,14 @@ def write_to_json(data):
 	
 	with open(JSON_PATH, 'w') as f:
 		json.dump(data_json, f)
-	print('Dumped the new shit!')
 
 def execute_paste(is_terminal = False):
 	
 	#empty the current set, since task will be executed now
 	current.clear()
-	print(current)
 	
 	#clipboard mei copy::
 	clipboard.copy(data_json['records'][0]['text'])
-	print('lol before gen event')
 	
 	#emulate paste event, is_terminal will only decide if shift key is to be emulated::	
 	kb_actor.press(Key.ctrl)
@@ -96,8 +93,6 @@ def execute_paste(is_terminal = False):
 	if is_terminal:
 		kb_actor.release(Key.shift)
 	kb_actor.release('v')
-
-	print('lol after gen event')
 
 
 def execute_copy():
@@ -113,21 +108,16 @@ def on_press(key):
 	if any([key in COMBO for COMBO in PASTE_COMBINATIONS]):
 		current.add(key)
 		if any(all(k in current for k in COMBO) for COMBO in PASTE_COMBINATIONS):
-			print('ctrlV detected!')
-			print(current)
 			execute_paste(is_terminal = False)
 
 	if any([key in COMBO for COMBO in TERMINAL_PASTE_COMBINATIONS]):
 		current.add(key)
 		if any(all(k in current for k in COMBO) for COMBO in TERMINAL_PASTE_COMBINATIONS):
-			print('ctrlShiftV detected!')
-			print(current)
 			execute_paste(is_terminal = True)
 
 	if any([key in COMBO for COMBO in COPY_COMBINATIONS]):
 		current.add(key)
 		if any(all(k in current for k in COMBO) for COMBO in COPY_COMBINATIONS):
-			print('ctrlC detected!')
 			execute_copy()
 			#empty the current set, since task has been executed now
 			current.clear()
@@ -136,7 +126,6 @@ def on_press(key):
 	if any([key in COMBO for COMBO in TERMINAL_COPY_COMBINATIONS]):
 		current.add(key)
 		if any(all(k in current for k in COMBO) for COMBO in TERMINAL_COPY_COMBINATIONS):
-			print('ctrlShiftC detected!')
 			execute_copy()
 			#empty the current set, since task has been executed now
 			current.clear()
@@ -144,13 +133,9 @@ def on_press(key):
 	if any([key in COMBO for COMBO in CUT_COMBINATIONS]):
 		current.add(key)
 		if any(all(k in current for k in COMBO) for COMBO in CUT_COMBINATIONS):
-			print('ctrlX detected!')
 			execute_copy()
 			#empty the current set, since task has been executed now
 			current.clear()
-
-	print(current)
-
 
 def on_release(key):
 	current.clear()
@@ -165,6 +150,5 @@ with Listener(on_press=on_press, on_release=on_release) as listener:
   File "keyboard_clip_p1.py", line 129, in <module>
     listener.join()
   File "/usr/local/lib/python3.6/site-va89-HP ~/Desktop/MUM_HACK/Octopaste $ python3 keyboard_clip_p1.py 
-  File "keyboard_clip_p1.py", line 111
-    if any([key in COMBO for COMBO in TERMINAL_PASTE_COMBINATIONS]):
-                        '''
+  File "keyboard_clip_p'''
+  
