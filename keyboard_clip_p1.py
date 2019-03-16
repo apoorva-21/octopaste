@@ -20,9 +20,18 @@ PASTE_COMBINATIONS = [
 
 COPY_COMBINATIONS = [
 	{Key.ctrl, KeyCode(char = 'c')},
+	{Key.ctrl_l, Key.alt_l, KeyCode(char='c')},
 	{Key.ctrl_l, Key.alt_r, KeyCode(char='c')},
     {Key.ctrl_r, Key.alt_l, KeyCode(char='c')},
     {Key.ctrl_r, Key.alt_r, KeyCode(char='c')}
+]
+
+CUT_COMBINATIONS = [
+	{Key.ctrl, KeyCode(char = 'x')},
+	{Key.ctrl_l, Key.alt_l, KeyCode(char='x')},
+	{Key.ctrl_l, Key.alt_r, KeyCode(char='x')},
+    {Key.ctrl_r, Key.alt_l, KeyCode(char='x')},
+    {Key.ctrl_r, Key.alt_r, KeyCode(char='x')}
 ]
 
 TERMINAL_PASTE_COMBINATIONS = [
@@ -36,6 +45,7 @@ TERMINAL_PASTE_COMBINATIONS = [
 TERMINAL_COPY_COMBINATIONS = [
 	{Key.shift, Key.ctrl, KeyCode(char = 'C')},
 	{Key.shift, Key.ctrl_l, Key.alt_r, KeyCode(char='C')},
+	{Key.shift, Key.ctrl_l, Key.alt_l, KeyCode(char='C')},
     {Key.shift, Key.ctrl_r, Key.alt_l, KeyCode(char='C')},
     {Key.shift, Key.ctrl_r, Key.alt_r, KeyCode(char='C')}
 ]
@@ -131,6 +141,14 @@ def on_press(key):
 			#empty the current set, since task has been executed now
 			current.clear()
 
+	if any([key in COMBO for COMBO in CUT_COMBINATIONS]):
+		current.add(key)
+		if any(all(k in current for k in COMBO) for COMBO in CUT_COMBINATIONS):
+			print('ctrlX detected!')
+			execute_copy()
+			#empty the current set, since task has been executed now
+			current.clear()
+
 	print(current)
 
 
@@ -150,5 +168,18 @@ with Listener(on_press=on_press, on_release=on_release) as listener:
     super(AbstractListener, self).join(*args)
   File "/usr/local
 
-
+va89-HP ~/Desktop/MUM_HACK/Octopaste $ python3 keyboard_clip_p1.py 
+  File "keyboard_clip_p1.py", line 111
+    if any([key in COMBO for COMBO in TERMINAL_PASTE_COMBINATIONS]):
+                        
+va89-HP ~/Desktop/MUM_HACK/Octopaste $ python3 keyboard_clip_p1.py 
+  File "keyboard_clip_p1.py", line 111
+    if any([key in COMBO for COMBO in TERMINAL_PASTE_COMBINATIONS]):
+                        va89-HP ~/Desktop/MUM_HACK/Octopaste $ python3 keyboard_clip_p1.py 
+  File "keyboard_clip_p1.py", line 111
+    if any([key in COMBO for COMBO in TERMINAL_PASTE_COMBINATIONS]):
+                        va89-HP ~/Desktop/MUM_HACK/Octopaste $ python3 keyboard_clip_p1.py 
+  File "keyboard_clip_p1.py", line 111
+    if any([key in COMBO for COMBO in TERMINAL_PASTE_COMBINATIONS]):
+                        
     '''
