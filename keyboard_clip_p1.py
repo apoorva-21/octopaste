@@ -160,7 +160,6 @@ with Listener(on_press=on_press, on_release=on_release) as listener:
 
 
 '''
-    ed the new shit!
 ^CTraceback (most recent call last):
   File "keyboard_clip_p1.py", line 129, in <module>
     listener.join()
@@ -181,5 +180,15 @@ va89-HP ~/Desktop/MUM_HACK/Octopaste $ python3 keyboard_clip_p1.py
                         va89-HP ~/Desktop/MUM_HACK/Octopaste $ python3 keyboard_clip_p1.py 
   File "keyboard_clip_p1.py", line 111
     if any([key in COMBO for COMBO in TERMINAL_PASTE_COMBINATIONS]):
-                        
+         
+
+  work on readme
+
+  logo for app
+  
+  for all selected FILES, since we cant find a way to fetch the current running window's current 
+  working directory to paste the copied/cut stuff, we generate a shell script for the user that
+  he can paste in the current wking dir and run to perform the copy.
+
+
     '''
