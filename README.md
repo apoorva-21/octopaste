@@ -22,9 +22,9 @@
 ## Dependencies
 
 For executing the desktop app, the following packages must be installed:
-* tkinter
-* pynput
-* clipboard
+- tkinter
+- pynput
+- clipboard
 
 Use pip3 to install the requirements:
 
@@ -45,16 +45,15 @@ Execute:
 
 ```python octopaste.py```
 
-- To copy from any documents, pdf, browser etc use:```Ctrl + C```
+- To copy from any documents, PDFs, browser etc.(non-terminal) use:```Ctrl + C```
 
 - To copy from Terminal use:```Ctrl + Shift + C```
 
-
-- To paste in any documents, pdf, browser etc use:```Ctrl + Alt + B```
+- To paste in any word processor, notepad, browser etc.(non-terminal) use:```Ctrl + Alt + B```
 
 - To paste in the Terminal:```Ctrl + Alt + Shift + B```
 
-A pop up will be generated. Now select the text you want to paste and press Enter to paste the text.
+A pop up will be generated. Now select the text you want to paste and press ```Enter``` to paste the text.
 
 The default maximum number of clipboard text segments in the OP pop-up have been set to 10. This can be changed with ease by modifying the following in octopaste.py:
 
