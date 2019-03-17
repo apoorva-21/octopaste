@@ -64,8 +64,12 @@ The default maximum number of clipboard text segments in the OP pop-up have been
 
 Click the below video to view an example of the usage:
 
-[![Link To Video](res/playbutton.png)](https://drive.google.com/file/d/1M0Zruh_Q50UU5jgDcfJDrXDtrY9mrbar/view?usp=sharing)
-
+<p align="center">
+    <a href = "https://drive.google.com/file/d/1M0Zruh_Q50UU5jgDcfJDrXDtrY9mrbar/view?usp=sharing">
+      <img width="150" height="150" src="res/playbutton.png" alt = "link to video">
+    </a>
+ </p>
+ 
 ## Coming Soon:
 
 File System manipulation made easier with a similar approach.
