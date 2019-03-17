@@ -53,7 +53,8 @@ Execute:
 
 - To paste in the Terminal:```Ctrl + Alt + Shift + B```
 
-A pop up will be generated. Now select the text you want to paste and press ```Enter``` to paste the text.
+A pop up will be generated. Now select the text you want to paste using the Arrow Keys and press ```Enter``` to paste the text.
+To select multiple entries to paste at a time, press and hold ```Shift``` when you scroll around using the Arrow Keys in the pop-up.
 
 The default maximum number of clipboard text segments in the OP pop-up have been set to 10. This can be changed with ease by modifying the following in octopaste.py:
 
