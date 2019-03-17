@@ -11,11 +11,11 @@ MAX_ENTRIES = 10
 
 # The key combination to check::
 PASTE_COMBINATIONS = [
-    {Key.ctrl, Key.alt, KeyCode(char='v')},
-    {Key.ctrl_l, Key.alt_l, KeyCode(char='v')},
-    {Key.ctrl_l, Key.alt_r, KeyCode(char='v')},
-    {Key.ctrl_r, Key.alt_l, KeyCode(char='v')},
-    {Key.ctrl_r, Key.alt_r, KeyCode(char='v')}
+    {Key.ctrl, Key.alt, KeyCode(char='b')},
+    {Key.ctrl_l, Key.alt_l, KeyCode(char='b')},
+    {Key.ctrl_l, Key.alt_r, KeyCode(char='b')},
+    {Key.ctrl_r, Key.alt_l, KeyCode(char='b')},
+    {Key.ctrl_r, Key.alt_r, KeyCode(char='b')}
 ]
 
 COPY_COMBINATIONS = [
@@ -183,7 +183,11 @@ va89-HP ~/Desktop/MUM_HACK/Octopaste $ python3 keyboard_clip_p1.py
          
 
   work on readme
+ ->examples when you search for an open source implementation, and you copy it, then you mistakenly re type ctrl c or something other than ctrl v
+ 	flipping over browser windows is too bad
+	worse if youve closed out of them
 
+->trying to summarize a word document or a PDF file, or just trying to retrieve t
   logo for app
   
   for all selected FILES, since we cant find a way to fetch the current running window's current 
