@@ -3,11 +3,6 @@
  </p>
 <h3 align="center">A visible, persistent and more forgiving clipboard.</h3>
 
-Whiteboard screencasting is all the rage for creating educational videos like those featured in the Khan Academy.
-The high cost of the input devices used by the tutors for making of these videos, makes it infeasible for the amateur tutors to make a online tutorial.
-FrugalDoodle is our attempt at helping the tutors to create their own tutorials at a very efficient cost.
-The other applications of the project are in business meetings and presentations.
-
 -greater copy efficiency : The gain in time accumulates with the number of discrete parts. 37s for 4 lines vs 23s for 4 lines of text. If *t* is the time for switching active windows and *n* is the number of discrete sections of text to be copied, the total time saved is around *(n-1)xt*, which is assuming that the source and destination remain fixed.
 
 -making cohesive notes from multiple documents made easier : copy multiple portions of text independently from multiple documents, without having to change your active window to paste the previously copied text, a faster and hassle-free way to extract what is essential.
