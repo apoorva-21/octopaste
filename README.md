@@ -64,7 +64,7 @@ The default maximum number of clipboard text segments in the OP pop-up have been
 
 Click the below video to view an example of the usage:
 
-[![Link To Video](res/playbutton)](https://drive.google.com/file/d/1M0Zruh_Q50UU5jgDcfJDrXDtrY9mrbar/view?usp=sharing)
+[![Link To Video](res/playbutton.png)](https://drive.google.com/file/d/1M0Zruh_Q50UU5jgDcfJDrXDtrY9mrbar/view?usp=sharing)
 
 ## Coming Soon:
 
