@@ -3,15 +3,15 @@
  </p>
 <h3 align="center">A visible, persistent and more forgiving clipboard.</h3>
 
-- greater copy efficiency : The gain in time accumulates with the number of discrete parts. 37s for 4 lines vs 23s for 4 lines of text. If *t* is the time for switching active windows and *n* is the number of discrete sections of text to be copied, the total time saved is around *(n-1)xt*, which is assuming that the source and destination remain fixed.
+- greater copy efficiency : The gain in time accumulates with the number of discrete parts. If *t* is the time for switching active windows and *n* is the number of discrete sections of text to be copied, the total time saved is around *(n-1) x t*, which is assuming that the source and destination remain fixed.
 
 - making cohesive notes from multiple documents made easier : copy multiple portions of text independently from multiple documents, without having to change your active window to paste the previously copied text, a faster and hassle-free way to extract what is essential.
 
 - copying code from multiple links : eliminate the frustration of having borrowed a code snippet or workaround from a browser tab, losing it by mis-typing or copying something else, only to realise you've 
 
-- greater fault tolerance for pressing the wrong hotkeys
+- greater fault tolerance for pressing the wrong hotkeys.
 
-- greater visibility : select which of the sections of copied text you want to paste on-the-fly and never get it wrong
+- greater visibility : select which of the sections of copied text you want to paste on-the-fly and never get it wrong.
 
 - persistent history : make your clipboard history persistent across sessions and shutdowns for easier recovery.
 
@@ -43,7 +43,7 @@ $ python3 octopaste.py
 ## Usage
 Execute:
 
-python OctoPaste.py
+```python octopaste.py```
 
 - To copy from any documents, pdf, browser etc use:```Ctrl + C```
 
@@ -64,8 +64,12 @@ The default maximum number of clipboard text segments in the OP pop-up have been
 
 Click the below video to view an example of the usage:
 
-[![Link To Video](res/playbutton)](https://drive.google.com/file/d/1M0Zruh_Q50UU5jgDcfJDrXDtrY9mrbar/view?usp=sharing)
-
+<p align="center">
+    <a href = "https://drive.google.com/file/d/1M0Zruh_Q50UU5jgDcfJDrXDtrY9mrbar/view?usp=sharing">
+      <img width="150" height="150" src="res/playbutton.png" alt = "link to video">
+    </a>
+ </p>
+ 
 ## Coming Soon:
 
 File System manipulation made easier with a similar approach.
