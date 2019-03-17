@@ -8,6 +8,8 @@ from tkinter import *
 from tkinter import font
 import os
 
+#LAST CHANGE (WORKING on Linux) : CHANGED the parameters for opening the JSON file from 'rb' -> 'r'
+
 class OctoPaste:
 
 	def __init__(self):
@@ -71,16 +73,13 @@ class OctoPaste:
 				f.write('{"records": []}')
 
 		self.data_json = []
-		with open(self.JSON_PATH, 'rb') as f:
+		with open(self.JSON_PATH, 'r') as f:
 			self.data_json = json.load(f)
 
 		self.kb_actor = Controller()
 
 		with keyboard.Listener(on_press=self.on_press, on_release=self.on_release) as listener:
 		    listener.join()
-
-
-
 
 	def handle_focus(self, event):
 		if event.widget == self.top:
@@ -90,7 +89,7 @@ class OctoPaste:
 	def dropDown(self, is_terminal = False):
 		def return_pressed(event):
 			to_be_put_in_clipboard = ''
-			with open(self.JSON_PATH, 'rb') as f:
+			with open(self.JSON_PATH, 'r') as f:
 				self.data_json = json.load(f)
 				print(self.Lb1.curselection())
 				# exit()
@@ -172,7 +171,7 @@ class OctoPaste:
 							font = octo_font)
 		
 
-		with open(self.JSON_PATH, 'rb') as f:
+		with open(self.JSON_PATH, 'r') as f:
 			self.data_json = json.load(f)
 			for index, element in enumerate(self.data_json['records']):
 				if len(element['text']) <= self.MAX_TEXT_LEN:
