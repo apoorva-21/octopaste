@@ -27,8 +27,9 @@ The other applications of the project are in business meetings and presentations
 ## Dependencies
 
 For executing the desktop app, the following packages must be installed:
-* a
-* b
+* tkinter
+* pynput
+* clipboard
 
 Use pip3 to install the requirements:
 
@@ -45,7 +46,21 @@ $ python3 octopaste.py
 
 
 ## Usage
+Execute:
+python OctoPaste.py
 
+To copy from any documents, pdf, browser etc use:
+ctrl + c
+To copy from Terminal use:
+ctrl + shift + c
+
+To paste in any documents, pdf, browser etc use:
+ctrl + alt + b
+A pop up will be generated. Now select the text you want to paste and press enter.
+The text will be pasted
+
+To paste in the Terminal use:
+ctrl + alt + shift + b
 
 ## Demonstration
 
